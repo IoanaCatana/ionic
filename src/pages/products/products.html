@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Products
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content padding>
+
+    <h2>Please select a Drink</h2>
+    <br>
+  <ion-item>
+    <ion-label>Pick drink</ion-label>
+    <ion-select [(ngModel)]="selectedItem">
+        <ion-option *ngFor="let item of items" [value]="item">{{item.brand}} {{item.price}} {{item.valuta}}</ion-option>
+    </ion-select>
+  </ion-item>
+ 
+ <br>
+  <button ion-button (click)="buyDrink()">Buy Drink</button>
+ 
+</ion-content>

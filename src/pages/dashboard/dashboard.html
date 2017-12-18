@@ -1,0 +1,48 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Dashboard</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <img src="assets/imgs/easjlogo.png" alt="easjlogo.png">
+    <br> 
+    <br>
+
+
+      <ion-row>                
+          <ion-col>
+              <button (click)="goToProducts()" ion-button color="primary" block>Products</button>
+            </ion-col>
+        </ion-row>
+      
+        <ion-row>                
+            <ion-col>
+                <button (click)="goToHistory()" ion-button color="primary" block>History</button>
+              </ion-col>
+          </ion-row>
+
+          <ion-row>                
+              <ion-col>
+                  <button (click)="goToBalance()" ion-button color="primary" block>Balance</button>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>                
+                <ion-col>
+                    <button (click)="goToDeposit()" ion-button color="primary" block>Deposit</button>
+                  </ion-col>
+              </ion-row>
+
+          <ion-row>                
+            <ion-col>
+              <button (click)="goToLogout()" ion-button color="danger" block>Log Out</button>
+            </ion-col>
+          </ion-row>
+
+
+</ion-content>
